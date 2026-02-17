@@ -45,7 +45,7 @@ Analisis menunjukkan bahwa kunci pertumbuhan masa depan bukan pada akuisisi, mel
 
 ## Project Files
 - RevoGrocers_Sales_Analysis.pdf : Project presentation
-- revogrocers_sales_dataset.csv : Dataset used for analysis
+- RevoGrocers_Sales_Dataset.csv : Dataset used for analysis
 
 ## Author
 Venny Amilia Deslaweny
