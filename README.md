@@ -1,42 +1,42 @@
 # RevoGrocers Sales Performance Analysis
 ## SECTION 1: PROJECT OVERVIEW
 ### Summary/Context
-Proyek ini menganalisis performa penjualan RevoGrocers, sebuah bisnis ritel bahan makanan, menggunakan dataset transaksi dari Kaggle. Analisis ini berfokus pada pergeseran strategi dari akuisisi pelanggan ke maksimalisasi nilai (LTV), guna memahami kontribusi pendapatan dan perilaku pembelian pelanggan untuk mendukung pengambilan keputusan bisnis yang lebih efisien.
+This project analyzes sales performance for RevoGrocers, a grocery retail business, to optimize sales strategies and enhance customer experience. Using a Kaggle dataset, the analysis identifies revenue patterns and customer behavior to support data-driven decision-making. The study concludes that growth should shift from customer acquisition to value maximization per customer.
 
 ### Goals
-Tujuan utama proyek ini adalah mengidentifikasi pola pendapatan, aktivitas pelanggan, dan kontribusi produk melalui analisis SQL. Proyek ini bertujuan untuk menjawab pertanyaan bisnis kunci mengenai produk penyumbang pendapatan terbesar dan tren perilaku pelanggan, yang pada akhirnya akan digunakan untuk mengoptimalkan strategi penjualan dan meningkatkan pengalaman pelanggan secara keseluruhan.
+The primary objective is to identify product categories driving sales and understand customer purchasing patterns. The project seeks to determine which categories contribute most to revenue, assess price elasticity, and identify high-value customers. Ultimately, it aims to provide actionable insights for inventory prioritization and loyalty program development.
 
 ### Process
-Proses analisis dilakukan menggunakan SQL untuk mengekstrak dan mengolah data transaksi. Langkah-langkahnya meliputi identifikasi produk dengan pendapatan tertinggi, analisis frekuensi pembelian pelanggan, serta pengelompokan segmen yang mendorong performa penjualan. Analisis diakhiri dengan evaluasi Customer Lifetime Value (LTV) dan pengujian elastisitas harga pada kategori produk tertentu.
+The analysis was conducted using SQL to query sales transactions, product data, and customer records. Key steps included calculating revenue after discounts, analyzing the correlation between sales volume and net revenue, and determining unique customer reach per category. Additionally, window functions were employed to identify the top user and calculate cumulative lifetime value.
 
 ### Output
-Analisis menunjukkan bahwa kunci pertumbuhan masa depan bukan pada akuisisi, melainkan pada strategi Maksimalisasi Nilai (meningkatkan LTV). Rekomendasi utama meliputi penerapan program loyalitas VIP bagi pelanggan bernilai tinggi (seperti Top User ID 94800), uji elastisitas harga pada kategori Grain, serta peningkatan stok pada kategori dengan loyalitas tinggi seperti Confections dan Meat.
+The Top 5 categories—Confections, Meat, Poultry, Cereals, and Snails—account for 52.88% of total revenue, with Confections alone contributing 12.87%. While customer reach is high (97K–98K per category), the repeat purchase rate varies from 25% to 44%. We recommend implementing a VIP loyalty program and optimizing Grain category pricing to increase volume and conversion of one-time buyers.
 
 ## SECTION 2: SCOPE OF WORK / ACHIEVEMENTS (AQS FRAMEWORK)
-- Menganalisis data transaksi menggunakan SQL untuk mengidentifikasi pola pendapatan dan kategori produk yang paling berkontribusi terhadap total penjualan.
-- Mengevaluasi perilaku pelanggan dengan membedakan antara akuisisi baru dan retensi, menemukan bahwa maksimalisasi LTV adalah kunci pertumbuhan utama.
-- Merekomendasikan implementasi Program Loyalitas VIP dengan menargetkan pelanggan bernilai tinggi berdasarkan tolok ukur Top User ID 94800.
-- Mengusulkan pengujian elastisitas harga pada kategori Grain untuk menemukan titik harga optimal guna meningkatkan Repeat Purchase Rate.
+- Analyzed revenue across 11 product categories, identifying Confections as the top driver generating approximately $556.93 million net revenue.
+- Identified that the Top 5 categories collectively account for 52.88% of the company's total net revenue.
+- Determined that 55%–75% of customers are one-time buyers, highlighting a major opportunity for retention-focused marketing.
+- Isolated Customer ID 94800 as the top-value user to model purchasing patterns for a new VIP loyalty program.
 
 ## SECTION 3: TOOLS & METHODS
 ### A. Tools
-- SQL (untuk kueri dan ekstraksi data)
-- Google Sheets/Excel (untuk visualisasi hasil kueri)
+- SQL (Standard SQL used for querying datasets)
+- Google BigQuery (indicated by project ID FSDA-sql-01)
 
 ### B. Methods
-- Sales Performance Analysis
-- Customer Behavior Analysis
-- Product Performance Analysis (Revenue Contribution)
-- Predictive Modeling (berdasarkan pola pembelian)
-- Price Elasticity Testing (proposal)
-- Customer Lifetime Value (LTV) Analysis
+- Data Aggregation (SUM, COUNT, AVG)
+- Table Joining (JOIN, LEFT JOIN)
+- Window Functions (SUM OVER, PARTITION BY)
+- Correlation Analysis (Revenue vs. Volume, Price vs. Reach)
+- Pareto (80/20) Principle Application
+- Cohort/Loyalty Analysis (Repeat Purchase Rate calculation)
 
 ## SECTION 4: VISUAL SUGGESTIONS
-- *Tabel Top Revenue Products (SQL Result)*: Cuplikan hasil kueri SQL yang menunjukkan daftar produk atau kategori dengan kontribusi pendapatan tertinggi.
-- *Distribusi LTV Pelanggan*: Grafik yang memvisualisasikan sebaran nilai transaksi pelanggan untuk mendukung strategi Value Maximization.
-- *Benchmarking Top User*: Profil visual dari User ID 94800 yang menunjukkan pola pembelian dan frekuensi sebagai studi kasus program loyalitas.
-- *Alokasi Stok vs. Loyalitas Produk*: Diagram yang memetakan kategori seperti Confections dan Meat berdasarkan volume penjualan dan tingkat loyalitas.
-- *Flowchart Strategi Konversi*: Visual yang menjelaskan langkah-langkah konversi pelanggan dari pembelian pertama ke pembelian kedua secara massal.
+- Category Revenue Contribution Pie Chart: A visual representing the 12.87% contribution of Confections and the 52.88% share of the Top 5 categories.
+- Revenue vs. Units Sold Scatter Plot: To illustrate the strong positive correlation between net revenue and sales volume across categories.
+- Customer Reach vs. Repeat Purchase Bar Chart: A comparison showing uniform customer reach (97K-98K) against the varying repeat purchase rates (25%-44%)
+- Top User Cumulative Revenue Line Graph: A visualization of Customer ID 94800’s spending velocity and lifetime value milestones over time.
+- Average Price vs. Revenue Matrix: A chart plotting categories like Grain (high price, low repeat) versus Confections (moderate price, high volume).
 
 ## Key Insights
 - Sales performance is influenced by product category and customer purchasing behavior.
