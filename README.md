@@ -53,5 +53,8 @@ Alokasi Stok vs. Loyalitas Produk: Diagram yang memetakan kategori seperti Confe
 
 Flowchart Strategi Konversi: Visual yang menjelaskan langkah-langkah konversi pelanggan dari pembelian pertama ke pembelian kedua secara massal.
 
+## File
+SQL Queries are available in this repository.
+
 ## Author
 Venny Amilia Deslaweny
