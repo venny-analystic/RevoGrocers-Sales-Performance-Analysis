@@ -1,5 +1,5 @@
 # RevoGrocers Sales Performance Analysis
-## SECTION 1: PROJECT SUMMARY FOR PORTFOLIO
+## SECTION 1: PROJECT OVERVIEW
 ### Summary/Context
 Proyek ini menganalisis performa penjualan RevoGrocers, sebuah bisnis ritel bahan makanan, menggunakan dataset transaksi dari Kaggle. Analisis ini berfokus pada pergeseran strategi dari akuisisi pelanggan ke maksimalisasi nilai (LTV), guna memahami kontribusi pendapatan dan perilaku pembelian pelanggan untuk mendukung pengambilan keputusan bisnis yang lebih efisien.
 
@@ -13,48 +13,39 @@ Proses analisis dilakukan menggunakan SQL untuk mengekstrak dan mengolah data tr
 Analisis menunjukkan bahwa kunci pertumbuhan masa depan bukan pada akuisisi, melainkan pada strategi Maksimalisasi Nilai (meningkatkan LTV). Rekomendasi utama meliputi penerapan program loyalitas VIP bagi pelanggan bernilai tinggi (seperti Top User ID 94800), uji elastisitas harga pada kategori Grain, serta peningkatan stok pada kategori dengan loyalitas tinggi seperti Confections dan Meat.
 
 ## SECTION 2: SCOPE OF WORK / ACHIEVEMENTS (AQS FRAMEWORK)
-Menganalisis data transaksi menggunakan SQL untuk mengidentifikasi pola pendapatan dan kategori produk yang paling berkontribusi terhadap total penjualan.
-
-Mengevaluasi perilaku pelanggan dengan membedakan antara akuisisi baru dan retensi, menemukan bahwa maksimalisasi LTV adalah kunci pertumbuhan utama.
-
-Merekomendasikan implementasi Program Loyalitas VIP dengan menargetkan pelanggan bernilai tinggi berdasarkan tolok ukur Top User ID 94800.
-
-Mengusulkan pengujian elastisitas harga pada kategori Grain untuk menemukan titik harga optimal guna meningkatkan Repeat Purchase Rate.
+- Menganalisis data transaksi menggunakan SQL untuk mengidentifikasi pola pendapatan dan kategori produk yang paling berkontribusi terhadap total penjualan.
+- Mengevaluasi perilaku pelanggan dengan membedakan antara akuisisi baru dan retensi, menemukan bahwa maksimalisasi LTV adalah kunci pertumbuhan utama.
+- Merekomendasikan implementasi Program Loyalitas VIP dengan menargetkan pelanggan bernilai tinggi berdasarkan tolok ukur Top User ID 94800.
+- Mengusulkan pengujian elastisitas harga pada kategori Grain untuk menemukan titik harga optimal guna meningkatkan Repeat Purchase Rate.
 
 ## SECTION 3: TOOLS & METHODS
 ### A. Tools
-
-SQL (untuk kueri dan ekstraksi data)
-
-Google Sheets/Excel (untuk visualisasi hasil kueri)
+- SQL (untuk kueri dan ekstraksi data)
+- Google Sheets/Excel (untuk visualisasi hasil kueri)
 
 ### B. Methods
-
-Sales Performance Analysis
-
-Customer Behavior Analysis
-
-Product Performance Analysis (Revenue Contribution)
-
-Predictive Modeling (berdasarkan pola pembelian)
-
-Price Elasticity Testing (proposal)
-
-Customer Lifetime Value (LTV) Analysis
+- Sales Performance Analysis
+- Customer Behavior Analysis
+- Product Performance Analysis (Revenue Contribution)
+- Predictive Modeling (berdasarkan pola pembelian)
+- Price Elasticity Testing (proposal)
+- Customer Lifetime Value (LTV) Analysis
 
 ## SECTION 4: VISUAL SUGGESTIONS
-Tabel Top Revenue Products (SQL Result): Cuplikan hasil kueri SQL yang menunjukkan daftar produk atau kategori dengan kontribusi pendapatan tertinggi.
+- *Tabel Top Revenue Products (SQL Result)*: Cuplikan hasil kueri SQL yang menunjukkan daftar produk atau kategori dengan kontribusi pendapatan tertinggi.
+- *Distribusi LTV Pelanggan*: Grafik yang memvisualisasikan sebaran nilai transaksi pelanggan untuk mendukung strategi Value Maximization.
+- *Benchmarking Top User*: Profil visual dari User ID 94800 yang menunjukkan pola pembelian dan frekuensi sebagai studi kasus program loyalitas.
+- *Alokasi Stok vs. Loyalitas Produk*: Diagram yang memetakan kategori seperti Confections dan Meat berdasarkan volume penjualan dan tingkat loyalitas.
+- *Flowchart Strategi Konversi*: Visual yang menjelaskan langkah-langkah konversi pelanggan dari pembelian pertama ke pembelian kedua secara massal.
 
-Distribusi LTV Pelanggan: Grafik yang memvisualisasikan sebaran nilai transaksi pelanggan untuk mendukung strategi Value Maximization.
+## Key Insights
+- Sales performance is influenced by product category and customer purchasing behavior.
+- Certain products contribute significantly to total revenue.
+- Customer transaction patterns indicate opportunities for targeted promotions.
 
-Benchmarking Top User: Profil visual dari User ID 94800 yang menunjukkan pola pembelian dan frekuensi sebagai studi kasus program loyalitas.
-
-Alokasi Stok vs. Loyalitas Produk: Diagram yang memetakan kategori seperti Confections dan Meat berdasarkan volume penjualan dan tingkat loyalitas.
-
-Flowchart Strategi Konversi: Visual yang menjelaskan langkah-langkah konversi pelanggan dari pembelian pertama ke pembelian kedua secara massal.
-
-## File
-SQL Queries are available in this repository.
+## Project Files
+- RevoGrocers_Sales_Analysis.pdf : Project presentation
+- revogrocers_sales_dataset.csv : Dataset used for analysis
 
 ## Author
 Venny Amilia Deslaweny
