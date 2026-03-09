@@ -1,5 +1,5 @@
 # RevoGrocers 
-### Sales Performance Analysis
+## Sales Performance Analysis
 
 ## SECTION 1: PROJECT OVERVIEW
 ### Summary/Context
