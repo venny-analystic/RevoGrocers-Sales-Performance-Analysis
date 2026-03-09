@@ -1,4 +1,6 @@
-# RevoGrocers Sales Performance Analysis
+# RevoGrocers 
+### Sales Performance Analysis
+
 ## SECTION 1: PROJECT OVERVIEW
 ### Summary/Context
 This project analyzes sales performance for RevoGrocers, a grocery retail business, to optimize sales strategies and enhance customer experience. Using a Kaggle dataset, the analysis identifies revenue patterns and customer behavior to support data-driven decision-making. The study concludes that growth should shift from customer acquisition to value maximization per customer.
