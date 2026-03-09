@@ -33,6 +33,9 @@ The Top 5 categories—Confections, Meat, Poultry, Cereals, and Snails—account
 - Pareto (80/20) Principle Application
 - Cohort/Loyalty Analysis (Repeat Purchase Rate calculation)
 
+### Dataset Source:  
+https://console.cloud.google.com/bigquery?pli=1&project=fsda-sql-01&ws=!1m0
+
 ## SECTION 4: VISUAL SUGGESTIONS
 - Category Revenue Contribution Pie Chart: A visual representing the 12.87% contribution of Confections and the 52.88% share of the Top 5 categories.
 - Revenue vs. Units Sold Scatter Plot: To illustrate the strong positive correlation between net revenue and sales volume across categories.
