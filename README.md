@@ -48,6 +48,12 @@ https://console.cloud.google.com/bigquery?pli=1&project=fsda-sql-01&ws=!1m0
 - Certain products contribute significantly to total revenue.
 - Customer transaction patterns indicate opportunities for targeted promotions.
 
+## Business Recommendations
+- Focus inventory and marketing efforts on the top five revenue-driving categories, particularly Confections, which generates the highest net revenue.
+- Implement a loyalty program targeting high-value customers to increase repeat purchases and lifetime value.
+- Optimize pricing strategies for underperforming categories such as Grain products to stimulate demand and improve sales volume.
+- Develop targeted promotions for one-time buyers to convert them into repeat customers and increase customer retention.
+
 ## Project Files
 - RevoGrocers_Sales_Analysis.pdf : Project presentation
 - RevoGrocers_Sales_Dataset.csv : Dataset used for analysis
