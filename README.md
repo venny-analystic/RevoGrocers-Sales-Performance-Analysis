@@ -53,6 +53,7 @@ SELECT category,
 FROM sales
 GROUP BY category
 ORDER BY total_revenue DESC;
+```
 This query identifies the highest revenue-generating product categories.
 
 ### Custumers Purchase Frequency
