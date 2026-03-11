@@ -22,8 +22,10 @@ The Top 5 categories—Confections, Meat, Poultry, Cereals, and Snails—account
 
 ## SECTION 3: TOOLS & METHODS
 ### A. Tools
-- SQL (Standard SQL used for querying datasets)
-- Google BigQuery (indicated by project ID FSDA-sql-01)
+- SQL (PostgreSQL / BigQuery)
+- Data Aggregation
+- Business Analytics
+- Root Cause Analysis (5 Whys)
 
 ### B. Methods
 - Data Aggregation (SUM, COUNT, AVG)
@@ -43,10 +45,48 @@ https://console.cloud.google.com/bigquery?pli=1&project=fsda-sql-01&ws=!1m0
 - Top User Cumulative Revenue Line Graph: A visualization of Customer ID 94800’s spending velocity and lifetime value milestones over time.
 - Average Price vs. Revenue Matrix: A chart plotting categories like Grain (high price, low repeat) versus Confections (moderate price, high volume).
 
+## Key SQL Queries
+### Revenue by Product Category
+```sql
+SELECT category,
+       SUM(revenue) AS total_revenue
+FROM sales
+GROUP BY category
+ORDER BY total_revenue DESC;
+This query identifies the highest revenue-generating product categories.
+### Custumers Purchase Frequency
+SELECT customer_id,
+       COUNT(order_id) AS purchase_frequency
+FROM orders
+GROUP BY customer_id
+ORDER BY purchase_frequency DESC;
+This query identifies high-value customers based on purchase frequency.
+### Average Order Value
+SELECT AVG(order_amount) AS average_order_value
+FROM orders;
+Used to measure customer spending behavior.
+
+## Analytical Approach
+The analysis was conducted using SQL queries to extract key business insights from sales and transaction data.
+The approach included:
+- Aggregation functions (SUM, AVG, COUNT)
+- Grouping data using GROUP BY
+- Identifying top-performing categories
+- Evaluating customer purchasing behavior
+- Investigating operational inefficiencies using root cause analysis 
+
 ## Key Insights
 - Sales performance is influenced by product category and customer purchasing behavior.
 - Certain products contribute significantly to total revenue.
 - Customer transaction patterns indicate opportunities for targeted promotions.
+
+## Business Impact
+The analysis helps RevoGrocers understand:
+- Which product categories drive the most revenue
+- Customer purchasing patterns
+- Potential pricing sensitivity
+- Operational inefficiencies causing product damage
+These insights support better decision-making in pricing strategy, inventory management, and logistics optimization.
 
 ## Business Recommendations
 - Focus inventory and marketing efforts on the top five revenue-driving categories, particularly Confections, which generates the highest net revenue.
