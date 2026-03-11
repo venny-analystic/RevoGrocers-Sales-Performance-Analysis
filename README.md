@@ -57,16 +57,20 @@ ORDER BY total_revenue DESC;
 This query identifies the highest revenue-generating product categories.
 
 ### Custumers Purchase Frequency
+```sql
 SELECT customer_id,
        COUNT(order_id) AS purchase_frequency
 FROM orders
 GROUP BY customer_id
 ORDER BY purchase_frequency DESC;
+```
 This query identifies high-value customers based on purchase frequency.
 
 ### Average Order Value
+```sql
 SELECT AVG(order_amount) AS average_order_value
 FROM orders;
+```
 Used to measure customer spending behavior.
 
 ## Analytical Approach
