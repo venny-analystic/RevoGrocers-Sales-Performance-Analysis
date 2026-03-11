@@ -66,7 +66,6 @@ SELECT AVG(order_amount) AS average_order_value
 FROM orders;
 Used to measure customer spending behavior.
 
-```markdown
 ## Analytical Approach
 The analysis was conducted using SQL queries to extract key business insights from sales and transaction data.
 The approach included:
