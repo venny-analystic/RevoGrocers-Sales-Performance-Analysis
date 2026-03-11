@@ -47,7 +47,6 @@ https://console.cloud.google.com/bigquery?pli=1&project=fsda-sql-01&ws=!1m0
 
 ## Key SQL Queries
 ### Revenue by Product Category
-```sql
 SELECT category,
        SUM(revenue) AS total_revenue
 FROM sales
